@@ -7,8 +7,9 @@ const supabase = createClient(
 );
 
 export async function GET() {
+  // Query aggiornata sulla tabella 'epidata'
   const { data, error } = await supabase
-    .from('guidelines')
+    .from('epidata')
     .select('*');
 
   if (error) {
