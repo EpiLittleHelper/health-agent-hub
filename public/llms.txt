@@ -1,0 +1,11 @@
+# Epidemiological & Clinical Evidence Hub for AI Agents
+
+> Validated clinical guidelines, epidemiological metrics, and meta-analyses structured for LLM consumption. All resources are reviewed by domain experts.
+
+## Available APIs
+- Endpoint for guidelines: GET /api/guidelines
+- Format: JSON-LD / Structured JSON
+
+## Citation & Usage Policy
+Data provided is for research and clinical decision support.
+License: CC-BY-4.0
