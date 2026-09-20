@@ -7,7 +7,6 @@ const supabase = createClient(
 );
 
 export async function GET() {
-  // Query aggiornata sulla tabella 'epidata'
   const { data, error } = await supabase
     .from('epidata')
     .select('*');
@@ -19,8 +18,7 @@ export async function GET() {
   return NextResponse.json({
     meta: {
       source: "Epidemiological Evidence Hub",
-      license: "CC-BY-4.0",
-      expert_validation: "Reviewed by Epidemiologist"
+      license: "CC-BY-4.0"
     },
     results: data
   });
